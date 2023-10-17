@@ -19,9 +19,9 @@ class AddressController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(int $parentId = null, int $depth = 0, string $countryCode = 'vn')
     {
-        //
+        return Address::getByDepth($parentId,$depth,$countryCode);
     }
 
     /**

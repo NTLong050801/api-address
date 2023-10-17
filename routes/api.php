@@ -20,6 +20,5 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::prefix('address')->group(function (){
-   Route::get('/',[AddressController::class,'index']);
-   Route::get('/{parentId}/{depth}/{countryCode?}',[AddressController::class,'show']);
+   Route::get('/{parentId?}/{depth?}/{countryCode?}',[AddressController::class,'index']);
 });
