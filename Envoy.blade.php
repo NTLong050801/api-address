@@ -1,4 +1,4 @@
-@servers(['web' => ['user@45.76.181.29']])
+@servers(['web' => ['root@45.76.181.29']])
 
 @task('deploy', ['on' => 'web'])
 cd /var/www/api-address
