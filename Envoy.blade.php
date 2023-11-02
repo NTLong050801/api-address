@@ -2,7 +2,7 @@
 
 @task('deploy', ['on' => 'web'])
 cd /var/www/api-address
-git pull origin master
+git pull origin main
 composer install --optimize-autoloader --no-dev
 php artisan cache:clear
 php artisan view:cache
