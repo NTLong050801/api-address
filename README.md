@@ -1,19 +1,34 @@
 # Api address
+
+## Install
+Install composer
+```
+composer install
+```
+Generate key
+```
+php artisan key:generate
+```
+Run migrations
+```
+php artisan migrate
+```
+
 ## Full api
 ```
 demo.test/address/{parentId?}/{depth?}/{countryCode?}
 ```
 
-## Lấy các tỉnh thành (vn)
+## Get provinces(vn)
 ```
-demo.test/address
+demo.test/api/address
 ```
 
-## Lấy các huyện trong tỉnh (vn)
+## Get districts in province (vn)
 ```
-demo.test/address/{idProvince}/1
+demo.test/api/address/{idProvince}/1
 ```
-## Lấy các xã trong huyện (vn)
+## Get wards in district (vn)
 ```
-demo.test/address/{idDistrict}/2
+demo.test/api/address/{idDistrict}/2
 ```
